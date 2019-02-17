@@ -2,6 +2,7 @@ import cv2
 import numpy as np
 
 image = cv2.imread('demo1.jpg')
+cv2.imshow('Original', image)
 image = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
 increase = 100 # value +++++++++++
 v = image[:, :, 2]

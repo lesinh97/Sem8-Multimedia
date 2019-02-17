@@ -2,9 +2,10 @@ import matplotlib.pylab as plt
 from skimage.io import imread
 from skimage.color import rgb2gray
 from skimage import filters
+
 im = rgb2gray(imread('demo1.jpg')) # RGB image to gray scale
 plt.gray()
-plt.figure(figsize=(20,20))
+plt.figure(figsize=(40,20))
 plt.subplot(221)
 plt.imshow(im)
 plt.title('original', size=20)
@@ -18,6 +19,6 @@ plt.imshow(edges_y)
 plt.title('sobel_y', size=20)
 plt.subplot(224)
 edges = filters.sobel(im)
-plt.imshow(edges)
-plt.title('sobel', size=20)
+plt.hist(edges)
+plt.title('histogram_sobel', size=20)
 plt.show()
