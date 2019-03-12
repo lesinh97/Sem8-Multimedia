@@ -1,0 +1,11 @@
+# Bo qua dataset
+opencv-face-recognition/dataset/quoc/
+opencv-face-recognition/dataset/sinh/
+opencv-face-recognition/dataset/son/
+opencv-face-recognition/dataset/unknown/
+
+# Bo qua hidden system files
+
+.DS_Store
+opencv-face-recognition/.DS_Store
+opencv-face-recognition/dataset/.DS_Store

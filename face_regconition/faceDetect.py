@@ -7,7 +7,7 @@ cap.set(4,480) # set Height
 while True:
     ret, img = cap.read()
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    faces = faceCascade.detectMultiScale(
+    faces = faceCas0ppcade.detectMultiScale(
         gray,     
         scaleFactor=1.2,
         minNeighbors=5,     
@@ -18,7 +18,7 @@ while True:
         roi_gray = gray[y:y+h, x:x+w]
         roi_color = img[y:y+h, x:x+w]  
     cv2.imshow('video',img)
-    k = cv2.waitKey(30) & 0xff
+    k = cv2.waitKey(30) & 0xff  
     if k == 27: # press 'ESC' to quit
         break
 cap.release()
